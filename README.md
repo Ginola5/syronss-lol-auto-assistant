@@ -124,10 +124,9 @@ syronss-lol-auto-assistant/
 5. Open a Pull Request
 
 ## 📄 License
+This project is licensed under the [Apache License 2.0](LICENSE).
 
-This project is licensed under the [Apache License 2.0](https://www.google.com/search?q=LICENSE).
-
-**Important:** If you create derivative works using this project, you are **required** to provide reference to the original project.
+You are free to use, modify, and distribute this software. See the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Developer
 
