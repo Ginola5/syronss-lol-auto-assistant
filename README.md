@@ -22,8 +22,7 @@ A modern, stylish, and advanced **League of Legends** automation tool. It automa
 
 ### 🔥 Advanced Features
 
-* **Spell Tracker:** Track enemy summoner spell cooldowns.
-* Hotkey support (Ctrl+1-5 and Ctrl+6-0)
+* **Spell Tracker:** Track enemy summoner spell cooldowns with hotkey support.
 * Real-time cooldown display
 * "Spell Ready" sound notification
 
@@ -49,8 +48,8 @@ cd syronss-lol-auto-assistant
 
 ```
 
-2. Create a virtual environment (recommended):
-
+2. Create a virtual environment (optional):
+> **Tip:** It's recommended to use a virtual environment to avoid package conflicts
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
@@ -65,14 +64,14 @@ pip install -r requirements.txt
 ```
 
 ## 💻 Usage
-
 To start the application:
 
 ```bash
 python src/main.py
 
 ```
-
+> ⚠️ **Important:** Ensure all dependencies are installed before running (see Installation).
+(Dont forget Install the required libraries in Installation section 3)
 ### ⌨️ Hotkeys (Spell Tracker)
 
 | Hotkey | Function |
@@ -136,15 +135,39 @@ This project is licensed under the [Apache License 2.0](https://www.google.com/s
 
 * GitHub: [@Syronss](https://github.com/Syronss)
 * Discord: `gorkemw.`
-
 ## ⚠️ Disclaimer
 
-This software is not endorsed by **Riot Games** and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends.
+### About This Project
+This is an **independent, open-source project** created by the community. It is not affiliated with, endorsed by, or sponsored by Riot Games.
 
-**League of Legends** and **Riot Games** are trademarks or registered trademarks of Riot Games, Inc.
+**League of Legends®** and **Riot Games** are trademarks or registered trademarks of Riot Games, Inc.
 
-Use this tool at your own risk. Be cautious about account security.
+### How It Works
+This tool uses Riot's **official League Client API (LCU)** - the same API that the League client uses internally. All features work through legitimate, publicly documented endpoints.
 
+**What this tool does:**
+- Automates match acceptance for convenience
+- Helps with champion selection/banning
+- Tracks enemy summoner spell cooldowns
+
+**What this tool does NOT do:**
+- Modify game files or memory
+- Provide unfair advantages in gameplay
+- Automate in-game actions or decisions
+- Access your account credentials
+
+### Use Responsibly
+This tool is designed as a quality-of-life helper and complies with Riot's developer guidelines. However:
+- Always ensure your usage follows [Riot's Terms of Service](https://www.riotgames.com/en/terms-of-service)
+- Use at your own discretion - the developer is not responsible for any account issues
+- When in doubt, check Riot's policies on third-party tools
+
+### No Warranty
+This software is provided "as is" without guarantees. While we strive for safety and compliance, use responsibly and stay informed about Riot's policies.
+
+---
+
+**Questions?** Contact Riot Games support for clarification on their third-party application policies.
 ---
 
 <p align="center">
