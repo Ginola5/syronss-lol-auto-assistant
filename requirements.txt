@@ -1,0 +1,6 @@
+customtkinter
+requests
+psutil
+pystray
+Pillow
+keyboard
