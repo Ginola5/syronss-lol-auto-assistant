@@ -71,7 +71,6 @@ python src/main.py
 
 ```
 > ⚠️ **Important:** Ensure all dependencies are installed before running (see Installation).
-(Dont forget Install the required libraries in Installation section 3)
 ### ⌨️ Hotkeys (Spell Tracker)
 
 | Hotkey | Function |
