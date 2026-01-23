@@ -132,5 +132,5 @@ Bu aracı kullanmak kendi sorumluluğunuzdadır. Hesap güvenliği konusunda dik
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/Syronss">Syronss</a>
+  Made by <a href="https://github.com/Syronss">Syronss</a>
 </p>
